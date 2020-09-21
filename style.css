@@ -23,22 +23,44 @@
 .heading_span {
   color: #688B58;
   text-shadow: 0.7px 0.7px 0.2px #8963BA;
+  font-size: 2em;
 }
 
 #navbar {
-  display: inline-grid;
-  posistion: fixed;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  position: sticky;
   bottom: 0px;
-  left: 0px;
+  background-color: #688B58;
+  z-index: 1;
   width: 100%;
   height: 200px;
-  color: #688B58;
-  background_color: #8963BA;
 }
 
 .navbar_link {
   padding: 15px;
-  margin: 15px;
-  grid-template-cloumns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  margin: 10px;
+  border-radius: 5px;
+  color: #688B58;
+  background-color: #54428E;
+  padding: 20px;
+  text-align: center;
+}
+
+.head {
+  color: #688B58;
+  text-shadow: 0.7px 0.7px 0.2px #8963BA;
+  text-align: center;
+  font-size: 3em;
+}
+
+a {
+  color: #688B58;
+  background-color: #54428E;
+  text-align: center;
+}
+
+.place p {
+  font-size: 30px;
+  width: 55%;
 }
